@@ -18,8 +18,20 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.purple,
+          leading: Icon(Icons.person),
           title: Text("Programs"),
+          actions: [
+
+            Icon(Icons.login),
+            SizedBox(width: 20,),
+            Icon(Icons.logout)
+          ],
+          centerTitle: true,
+          backgroundColor: Colors.grey,
+          foregroundColor: Colors.white,
+        ),
+        body: Column(
+          children: [],
         ),
       ),
     );
