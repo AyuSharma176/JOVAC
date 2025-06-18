@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
         body: Column(children: []),
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.amber,
+          foregroundColor: Colors.white,
           onPressed: () {
             print('Helow');
           },
