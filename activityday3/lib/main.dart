@@ -11,24 +11,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Project day 6',
+      title: 'Activity',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
-      ),
       home: Scaffold(
         appBar: AppBar(
-          // leading: Icon(Icons.person),
-          title: Text("Programs"),
-          actions: [Icon(Icons.login), SizedBox(width: 20), Icon(Icons.logout)],
+          title: Text('Centrum'),
           centerTitle: true,
-          backgroundColor: Colors.grey,
+          backgroundColor: Colors.blue,
           foregroundColor: Colors.white,
         ),
-        body: Column(children: []),
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.amber,
-          foregroundColor: Colors.white,
           onPressed: () {
             print('Helow');
           },
@@ -37,12 +29,24 @@ class MyApp extends StatelessWidget {
         drawer: Drawer(
           child: ListView(
             children: [
-              DrawerHeader(child: Text('Helow')),
+              DrawerHeader(child: Text('Centrum')),
               ListTile(
                 leading: Icon(Icons.home),
-                title: Text('Home'),
+                title: Text('Dashboard'),
                 onTap: () {
-                  print('Helow');
+                  print('Dashboard');
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.account_box),
+                title: Text('My Account'),
+              ),
+              SizedBox(height: 500),
+              ListTile(
+                leading: Icon(Icons.logout),
+                title: Text('Logout'),
+                onTap: () {
+                  print('Logout');
                 },
               ),
             ],
@@ -66,6 +70,7 @@ class MyApp extends StatelessWidget {
               label: 'person',
               tooltip: 'Go to person',
             ),
+
           ],
         ),
       ),
