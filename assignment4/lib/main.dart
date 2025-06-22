@@ -1,3 +1,4 @@
+import 'package:assignment4/pages/MyCounter.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,9 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-
+      title: 'Assignment 4',
+      debugShowCheckedModeBanner: false,
+      home: MyCounter()
     );
   }
 }
-
